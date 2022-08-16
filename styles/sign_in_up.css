@@ -1,0 +1,86 @@
+
+.section_sign_in,
+.section_sign_up{
+    margin: 20px 20px;
+}
+
+.section_sign_up > .sign_card {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 3px 3px 1px rgba(50, 50, 50, 0.776);
+}
+
+.section_sign_in > .sign_card {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 3px 3px 1px rgba(50, 50, 50, 0.776);
+}
+.sign-up_form > .names, .mail_password{
+    display: flex;
+    flex-direction: column;
+}
+
+.names, .mail_password > label{
+    text-align: left;
+}
+
+.sign-up_form .names > input{
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.sign-up_form .mail_password > input{
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.sign-up_form button{
+    background: rgb(195, 24, 24);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.sign-up_form button:hover{
+    background: rgba(195, 24, 24, 0.861);
+}
+
+.sign-in_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in_form input{
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.sign-in_form label{
+    text-align: left;
+}
+
+.sign-in_form button{
+    background: rgb(24, 61, 195);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.sign-in_form button:hover{
+    background: rgba(24, 61, 195, 0.808)
+}
