@@ -1,46 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Relworx</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <h1 class="logo">Relworx</h1>
-            <ul class="account_access">
-                <li>
-                    <button type="button" id="sign_in">Sign in</button>
-                </li>
-                <li>
-                    <button type="button" id="sign_up">Sign up</button>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <h1 class="logo">Relworx</h1>
+        <ul class="account_access">
+          <li>
+            <button type="button" id="sign_in">Sign in</button>
+          </li>
+          <li>
+            <button type="button" id="sign_up">Sign up</button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="section_one">
-            <h1>Online Payment Solution</h1>
-            <p>Integrate digital payments in your internet business. Mobile money & Visa /Mastercard</p>
-            <button type="button" id="get_started_btn" >Get Started now Sign up</button>
-        </section>
-        <section class="section_two">
-            <div class="card">
-                <h1>Mobile Money</h1>
-                <p class="card-img"></p>
+      <section class="section_one">
+        <h1>Online Payment Solution</h1>
+        <p>
+          Integrate digital payments in your internet business. Mobile money &
+          Visa /Mastercard
+        </p>
+        <button type="button" id="get_started_btn">
+          Get Started now Sign up
+        </button>
+      </section>
+      <section class="section_two">
+        <div class="card">
+          <h1>Mobile Money</h1>
+          <p class="card-img"></p>
+        </div>
+        <div class="card">
+          <h1>Mobile Money</h1>
+          <p class="card-img"></p>
+        </div>
+        <div class="card">
+          <h1>Mobile Money</h1>
+          <p class="card-img"></p>
+        </div>
+      </section>
+      <section class="sign_up">
+        <div class="sign_card">
+          <form action="">
+            <div class="names">
+              <label for="first_name">first-name :</label>
+              <input
+                type="text"
+                value="first_name"
+                id="first_name"
+                placeholder="your first name here"
+                required
+              />
+              <label for="last_name">last-name :</label>
+              <input
+                type="text"
+                value="last_name"
+                id="last_name"
+                placeholder="your last name here"
+                required
+              />
             </div>
-            <div class="card">
-                <h1>Mobile Money</h1>
-                <p class="card-img"></p>
+            <div class="mail_password">
+              <label for="email">email :</label>
+              <input
+                type="email"
+                value="email"
+                placeholder="your@gmail.com"
+                required
+              />
+              <label for="password">password :</label>
+              <input
+                type="password"
+                value="password"
+                id="password"
+                required
+                maxlength="6"
+              />
+              <label for="password_confirm">confirm password :</label>
+              <input
+                type="pawssword"
+                value="password_confirm"
+                id="password_confirm"
+                required
+                maxlength="6"
+              />
             </div>
-            <div class="card">
-                <h1>Mobile Money</h1>
-                <p class="card-img"></p>
+            <div class="action">
+              <button type="submit" id="btn_sign_up">Sign up</button>
             </div>
-        </section>
+          </form>
+        </div>
+      </section>
+      <section class="sign_in">
+        <div class="sign_card">
+          <form action="">
+            <label for="email">email :</label>
+            <input
+              type="email"
+              value="email"
+              placeholder="your@gmail.com"
+              required
+            />
+            <label for="password">password :</label>
+            <input
+              type="password"
+              value="password"
+              id="password"
+              required
+              maxlength="6"
+            />
+            <div class="action">
+              <button type="submit" id="btn_sign_in">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
