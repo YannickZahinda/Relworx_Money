@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/sign_in_up.css" />
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="section_sign_up">
+      <header>
+        <nav>
+          <h1 class="logo">Relworx</h1>
+        </nav>
+      </header>
+      <div class="sign_card">
+        <h1>Sign up</h1>
+        <form action="" class="sign-up_form">
+          <div class="names">
+            <label for="first_name">first-name </label>
+            <input type="text" id="first_name" required />
+            <label for="last_name">last-name </label>
+            <input type="text" id="last_name" required />
+          </div>
+          <div class="mail_password">
+            <label for="email">email</label>
+            <input type="email" value="email" required />
+            <label for="password">password </label>
+            <input
+              type="password"
+              value="password"
+              id="password"
+              required
+              maxlength="6"
+            />
+            <label for="password_confirm">confirm password </label>
+            <input
+              type="pawssword"
+              value="password_confirm"
+              id="password_confirm"
+              required
+              maxlength="6"
+            />
+          </div>
+          <div class="action">
+            <button type="submit" id="btn_sign_up">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
