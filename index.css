@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 10px;
+}
+
+.logo{
+    flex: 1;
+}
+
+nav ul > li {
+    list-style-type: none;
+}
+
+.account_access{
+    display: flex;
+    gap: 10px;
+}
+
+nav ul > li #sign_up{
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(24, 61, 195);
+    border: none;
+    cursor: pointer;
+}
+
+nav ul > li #sign_in{
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(195, 24, 24);
+    border: none;
+    cursor: pointer;
+}
+
+.section_one {
+    height: 80vh;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.837);
+    background-color: rgb(162, 83, 4);
+    padding-top: 24vh;
+}
+
+.section_one h1{
+    font-size: 45px;
+}
+
+.section_one #get_started_btn{
+    padding: 10px;
+    background-color: rgb(215, 65, 65);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.section_two{
+    background: #fff;
+    margin: 30px;
+}
+
+.section_two > .card{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.section_two > .card:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.card > h1{
+    width: 50%;
+}
+
+.card-img{
+    /* padding: 100px; */
+    width: 50%;
+    height: 50vh;
+    background: rgb(31, 100, 144);
+}
