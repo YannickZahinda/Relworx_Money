@@ -1,0 +1,20 @@
+{
+  "name": "relworx_money",
+  "version": "1.0.0",
+  "description": "This a simple website allowing the user to sign in, see his ballance and make money transaction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YannickZahinda/Relworx_Money.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YannickZahinda/Relworx_Money/issues"
+  },
+  "homepage": "https://github.com/YannickZahinda/Relworx_Money#readme"
+}

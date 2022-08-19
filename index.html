@@ -2,53 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/sign_in_up.css" />
     <title>Relworx</title>
   </head>
   <body>
-    <main>
-      <header>
-        <nav>
-          <h1 class="logo">Relworx</h1>
-          <ul class="account_access">
-            <li>
-              <button onClick="javascript:window.location.href='./sign_in.html'" type="button" id="sign_in">Sign in</button>
-            </li>
-            <li>
-              <button onClick="javascript:window.location.href='./sign_up.html'" type="button" id="sign_up">Sign up</button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section class="section_one">
-        <h1>Online Payment Solution</h1>
-        <p>
-          Integrate digital payments in your internet business. Mobile money &
-          Visa /Mastercard
-        </p>
-        <button onClick="javascript:window.location.href='././sign_up/sign_up.html'" type="button" id="get_started_btn">
-          Get Started now Sign up
-        </button>
-      </section>
-      <!-- <section class="section_two">
-        <div class="card">
-          <h1>Mobile Money</h1>
-          <p class="card-img"></p>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!-----------------LOGIN FORM--------------------->
+          <form class="sign-in-form">
+            <h2 class="title">Login</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="number" id="pin" placeholder="Password" />
+            </div>
+            <input
+              type="submit"
+              value="Login"
+              class="btn solid"
+              id="loginBtn"
+            />
+            <p class="social-text">Or Login with social medias</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
         </div>
-        <div class="card">
-          <h1>Mobile Money</h1>
-          <p class="card-img"></p>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <img
+            src="assets/relworx.png"
+            class="image"
+            alt=""
+          />
+          <div class="content">
+            <h3>Want to know more about Relworx money transfer?</h3>
+            <p>
+              Please, provide your information to let us know more about you before we provide you info about your
+              online wallet ! Receive and send money in a sec !
+            </p>
+            <a href="./register.html">
+              <button class="btn transparent" id="sign" formaction="">
+                Signup
+              </button>
+            </a>
+          </div>
+          <img
+            src="assets/undraw_transfer_money_re_6o1h.svg"
+            class="image"
+            alt=""
+            style="width: 70%"
+          />
         </div>
-        <div class="card">
-          <h1>Mobile Money</h1>
-          <p class="card-img"></p>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Already familiar with the Relworx platfom ?</h3>
+            <p>
+              Continue enjoying the benefit of being an online user. Kindly, for
+              our app well being, provide every misfunctionnal feature while
+              using the platform; one of our agent will follow up. call the
+              emergency nbr 84040.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">Login in</button>
+          </div>
+          <img src="img/register.svg" class="image" alt="" />
         </div>
-      </section> -->
-    </main>
-    <!-- <script src="./js/sign_in.js"></script> -->
-    <script src="./js/sign_up.js"></script>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="./components/firebase.js"></script>
+    <script src="./components/login.js"></script>
+    <script src="./components/index.js"></script>
   </body>
 </html>
