@@ -17,38 +17,37 @@
       </header>
       <div class="sign_card">
         <h1>Sign up</h1>
-        <form action="" class="sign-up_form">
-          <div class="names">
+        <form class="sign-up_form">
+          <!-- <div class="names">
             <label for="first_name">first-name </label>
             <input type="text" id="first_name" required />
             <label for="last_name">last-name </label>
-            <input type="text" id="last_name" required />
-          </div>
+            <input type="text" id="last_name" autocomplete="username" required />
+          </div> -->
           <div class="mail_password">
             <label for="email">email</label>
-            <input type="email" value="email" required />
+            <input type="email" id="email" required />
             <label for="password">password </label>
             <input
               type="password"
-              value="password"
               id="password"
               required
-              maxlength="6"
-            />
-            <label for="password_confirm">confirm password </label>
-            <input
-              type="pawssword"
-              value="password_confirm"
-              id="password_confirm"
-              required
-              maxlength="6"
+              autocomplete="current-password"
             />
           </div>
-          <div class="action">
-            <button type="submit" id="btn_sign_up">Sign up</button>
-          </div>
+          <button type="submit" id="btn_sign_up">Sign up</button>
         </form>
       </div>
+      <div id="message"></div>
     </main>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="./components/firebase.js"></script>
+    <script src="./components/dashboard.js"></script>
+    <script src="./components/modal.js"></script>
+    <script src="./components/logout.js"></script>
+    <script src="./components/transaction.js"></script>
+    <script src="/components/register.js"></script>
   </body>
 </html>

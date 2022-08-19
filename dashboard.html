@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>Relworx dashboard</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <h1 class="logo">Relworx</h1>
+          <ul class="account_access">
+            <li>
+              <button type="button" id="sign_in">Log out</button>
+            </li>
+            <li id="user_name_logged">Username</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="user_info_section">
+        <h2>Bio, id : <span id="user_id"></span></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aut
+          quia, eum, quam sed atque culpa recusandae alias inventore cum
+          explicabo maxime aperiam nobis quos reiciendis iure amet maiores
+          delectus?
+        </p>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Amount Sent</th>
+              <th>Time updated</th>
+            </tr>
+          </thead>
+
+          <tbody class="table-body">
+            <!-- // Data will be rendered here -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="./components/firebase.js"></script>
+    <script src="./components/dashboard.js"></script>
+    <script src="./components/modal.js"></script>
+    <script src="./components/login.js"></script>
+    <script src="./components/logout.js"></script>
+    <script src="./components/transaction.js"></script>
+  </body>
+</html>
